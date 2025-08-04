@@ -1,21 +1,29 @@
-function checkAge () {
-const myText = document.getElementById("myAge").value;
-const myAge = parseInt(myText);
-const result1 = document.getElementById("result1");
-const result2 = document.getElementById("result2");
-const result3 = document.getElementById("result3");
+function checkAge() {
+  const myText = document.getElementById("myText").value;
+  const result = document.getElementById("result");
 
-if (myAge >=18 && age <=79) {
-    result1.textContent ('You are old enough to enter this site.');
+  if (myText >= 18 && myText <= 79) {
+    result.textContent = "You are old enough to enter this site.";
+  } else if (myText >= 80) {
+    result.textContent = "You are TOO OLD to enter this site.";
+  } else {
+    result.textContent = "Too young or Invalid answer.";
+  }
 }
 
-else if (myAge >=80) {
-    result2.textContent ('You are TOO OLD to enter this site.');
-}
+function EvenOddNumber() {
+    const theNumber = document.getElementById("theNumber").value;
+    const result1 = document.getElementById("result1");
 
-else {
-    result3.textContent ('You must be 18 to enter this site.');
-}
+    if (theNumber % 2 === 0) {
+        result1.textContent = "The number is Even";
+    }
+    else {
+        result1.textContent = "Invalid answer or the number is Odd";
+    }
+
+
+
 
 
 }
