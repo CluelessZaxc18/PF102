@@ -1,14 +1,20 @@
-const myInput = document.getElementById('myInput');
-  const enableButton = document.getElementById('enableButton');
+function LoginAccount () {
+  let BolLogin = false;
+  let User = document.getElementById("User").value;
+  let password = document.getElementById("password").value;
 
-  let isInputEnabled = false; // Initial state
+if(User === "Roco" && password === "123") {
+    BolLogin = true;
+  }
 
-  enableButton.addEventListener('click', function() {
-    isInputEnabled = !isInputEnabled;
-    myInput.disabled = !isInputEnabled; // Set 'disabled' attribute based on inverted boolean
-    if (isInputEnabled) {
-      enableButton.textContent = 'Disable Input';
-    } else {
-      enableButton.textContent = 'Enable Input';
-    }
-  });
+  if(BolLogin) {
+    document.getElementById("Result").textContent = "Log in Successful!";
+  }
+    
+  else {
+    document.getElementById("Result").textContent = "Username or Password is wrong.";
+  }
+
+
+
+}
