@@ -8,5 +8,5 @@ let max = 6;
 let min = 1;
 
 randomNum = Math.trunc(Math.random() * max) + min;
-mylabel.textContent = Generated number : ${randomNum};
+mylabel.textContent = randomNum;
 }
