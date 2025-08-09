@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+        /*logical operators = used to combine or manipulate 
+        boolean values. (true or false)
+
+        and - &&
+        OR - ||
+        NOT - !
+
+
+
+        */
+
+
+        //EXAMPLE #1
+        const  a1 = true && true; //it returns true
+        const a2 = true && false; // it returns false
+        const a3 = false && true; // it returns false
+        const a4 = false && 3 === 4;// it returns false
+        const a5 = "Cat" && "Dog";// if naay mareturn nga value, matic true na
+        const a6 = "Cat" && false;
+        
+        console.log(a6);
+
+        //EXAMPLE #2
+
+        const temp = 20;
+
+        if(temp > 0 && temp <= 30) {
+            console.log ("The weather is good");
+        } 
+        else {
+            console.log ("The weather is bad.");
+        }
+
+        // OR OPERATOR
+
+        const o1 = true || false; // the return is true
+        const o2 = false || true; // true
+        const o3 = false || false;// false
+        const o4 = "Cat" || 3 === 4; //true
+        console.log(o4);
+
+        // NOT operator
+
+        const n1 = !true;// false
+        const n2 = !false;// true
+        const n3 = !"Dog";// false - truthy
+
+        console.log(n3);
+
+        const naabayAdlaw = false;
+        
+        if(!naabayAdlaw) {
+            console.log("THe weather is good!");
+        }
+        else {
+            console.log ("The weather is bad!");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        // #1. Create a logical statement.
+        // IF imong edad is 18 above ug naa kay ID, "You're allowed". pero if wala kay ID, "You're not allowed.". If 18 naka ug naa kay ID, "You're allowed".
+
+        let age = 18;
+        let idProof = false;
+
+        if (age > 18 && !idProof) {
+            console.log ("You're allowed.");
+        }
+        else if (age > 18 && idProof) {
+            console.log ("You're not allowed");
+        }
+        else if (age == 18 && !idProof) {
+            console.log ("You're allowed, You can go.");
+        }
+        else {
+            console.log ("Bawal!");
+        }
+
+
+        //#2. CREATE A LOGICAL STATEMENT.
+        // If imong edad is 18 na pataas or naa kay guardian kauban, "pwede ka musulod". If dili paka 18, pero naa kay lang kay guardian, pwede gihapon ka makasulod.
+        // If wala kay guardian, dili pud ka 18, "Dili ka makasulod"
+
+        let edad = 18;
+        let guardian = true;
+
+        if (edad >= 18 || guardian) {
+            console.log ("Pwede ka musulod");
+        }
+        else if (edad <= 18 || guardian) {
+            console.log ("Pwede ka makasulod");
+        }
+        else if (!guardian && edad <= 18) {
+            console.log ("Dili ka makasulod");
+        }
+        else {
+            console.log ("Bawal!");
+        }
+        
+        
+
+
+
+    </script>
+</body>
+</html>
