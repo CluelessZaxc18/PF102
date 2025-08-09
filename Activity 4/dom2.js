@@ -9,4 +9,5 @@ let min = 1;
 
 randomNum = Math.trunc(Math.random() * max) + min;
 mylabel.textContent = randomNum;
+
 }
