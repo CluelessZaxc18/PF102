@@ -3,18 +3,21 @@ function LoginAccount () {
   let User = document.getElementById("User").value;
   let password = document.getElementById("password").value;
 
+
 if(User === "Roco" && password === "123") {
     BolLogin = true;
   }
 
   if(BolLogin) {
-    document.getElementById("Result").textContent = "Log in Successful!";
+    document.getElementById("Rsult").textContent = "Log in Successful!";
   }
     
   else {
-    document.getElementById("Result").textContent = "Username or Password is wrong.";
+    document.getElementById("Rsult").textContent = "Username or Password is wrong.";
   }
 
 
 
 }
+
+
