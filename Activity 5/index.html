@@ -17,81 +17,53 @@
      
      -->
 
+
     <p>Rock, Paper, and Scissors</p>
 
-
-    <button onclick = "
-    const cChoice = ['Rock', 'Paper', 'Scissors'];
-    const randomNum = Math.random();
-    const cMove = cChoice[Math.floor(randomNum * 3)];
-    
-     
-    
-
-    if (randomNum >= 0 && randomNum < 1 / 3) {
+    <button onclick="
+        const cChoice1 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum1 = Math.random();
+        const cMove1 = cChoice1[Math.floor(randomNum1 * 3)];
         console.log('You picked: Rock');
-    
-    } 
-    else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
-        console.log('You picked: Paper');
-    
-    } 
-    else if (randomNum >= 2 / 3 && randomNum < 1) {
-        console.log('You picked: Scissors');
-    
-    }
-
-    console.log('Computer chose: ' + cMove);
-
-    if (cMove == 'Rock') {
-        alert ('You picked Rock, computer picked rock, Its a tie');
-    }
-    else if (cMove == 'Paper') {
-        alert('You picked Rock, computer picked paper, you lose!');
-    }
-    else if (cMove == 'Scissors') {
-        alert('You picked Rock, computer picked scissors, you won!');
-    }
-    
-
+        console.log('Computer chose: ' + cMove1);
+        if (cMove1 === 'Rock') {
+            alert('You picked Rock, computer picked Rock, It\'s a tie');
+        } else if (cMove1 === 'Paper') {
+            alert('You picked Rock, computer picked Paper, you lose!');
+        } else {
+            alert('You picked Rock, computer picked Scissors, you win!');
+        }
     ">Rock</button>
 
-    <button onclick = "
-    const randomNum2 = Math.random();
-    const cChoice2 = ['Rock', 'Paper', 'Scissors'];
-    const cMove2 = cChoice2[Math.floor(randomNum2 * 3)];
-
-     
-   
-
-    if (randomNum2 >= 0 && randomNum2 < 1 / 3) {
-        console.log('You picked: Rock');
-    
-    } 
-    else if (randomNum2 >= 1 / 3 && randomNum2 < 2 / 3) {
+    <button onclick="
+        const cChoice2 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum2 = Math.random();
+        const cMove2 = cChoice2[Math.floor(randomNum2 * 3)];
         console.log('You picked: Paper');
-    
-    } 
-    else if (randomNum2 >= 2 / 3 && randomNum2 < 1) {
-        console.log('You picked: Scissors');
-    
-    }
-    
- console.log('Computer chose: ' + cMove2);
-    if (cMove2 == 'Rock') {
-        alert ('You picked Scissors, computer picked rock, you lose!');
-    }
-    else if (cMove2 == 'Paper') {
-        alert('You picked Scissors, computer picked paper, you won!');
-    }
-    else if (cMove2 == 'Scissors') {
-        alert('You picked Scissors, computer picked scissors, its a tie!');
-    }
-    
-
+        console.log('Computer chose: ' + cMove2);
+        if (cMove2 === 'Rock') {
+            alert('You picked Paper, computer picked Rock, you win!');
+        } else if (cMove2 === 'Paper') {
+            alert('You picked Paper, computer picked Paper, It\'s a tie');
+        } else {
+            alert('You picked Paper, computer picked Scissors, you lose!');
+        }
     ">Paper</button>
 
-    <button>Scissors</button>
+    <button onclick="
+        const cChoice3 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum3 = Math.random();
+        const cMove3 = cChoice3[Math.floor(randomNum3 * 3)];
+        console.log('You picked: Scissors');
+        console.log('Computer chose: ' + cMove3);
+        if (cMove3 === 'Rock') {
+            alert('You picked Scissors, computer picked Rock, you lose!');
+        } else if (cMove3 === 'Paper') {
+            alert('You picked Scissors, computer picked Paper, you win!');
+        } else {
+            alert('You picked Scissors, computer picked Scissors, It\'s a tie');
+        }
+    ">Scissors</button>
     
     <!--Create a conditional statement.
         If computer move is equal to rock, an alert Box would show a message that that says 'You picked Rock, computer picked rock, Its a tie'
