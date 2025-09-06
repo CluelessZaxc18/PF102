@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+    <p>Rock, Paper, and Scissors</p>
+
+    <button onclick="
+        const cChoice1 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum1 = Math.random();
+        const cMove1 = cChoice1[Math.floor(randomNum1 * 3)];
+        console.log('You picked: Rock');
+        console.log('Computer chose: ' + cMove1);
+        if (cMove1 === 'Rock') {
+            alert('You picked Rock, computer picked Rock, It\'s a tie');
+        } else if (cMove1 === 'Paper') {
+            alert('You picked Rock, computer picked Paper, you lose!');
+        } else {
+            alert('You picked Rock, computer picked Scissors, you win!');
+        }
+    ">Rock</button>
+
+    <button onclick="
+        const cChoice2 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum2 = Math.random();
+        const cMove2 = cChoice2[Math.floor(randomNum2 * 3)];
+        console.log('You picked: Paper');
+        console.log('Computer chose: ' + cMove2);
+        if (cMove2 === 'Rock') {
+            alert('You picked Paper, computer picked Rock, you win!');
+        } else if (cMove2 === 'Paper') {
+            alert('You picked Paper, computer picked Paper, It\'s a tie');
+        } else {
+            alert('You picked Paper, computer picked Scissors, you lose!');
+        }
+    ">Paper</button>
+
+    <button onclick="
+        const cChoice3 = ['Rock', 'Paper', 'Scissors'];
+        const randomNum3 = Math.random();
+        const cMove3 = cChoice3[Math.floor(randomNum3 * 3)];
+        console.log('You picked: Scissors');
+        console.log('Computer chose: ' + cMove3);
+        if (cMove3 === 'Rock') {
+            alert('You picked Scissors, computer picked Rock, you lose!');
+        } else if (cMove3 === 'Paper') {
+            alert('You picked Scissors, computer picked Paper, you win!');
+        } else {
+            alert('You picked Scissors, computer picked Scissors, It\'s a tie');
+        }
+    ">Scissors</button>
+    
+
+  <!--
+
+    COMPLETE BUT NO FUNCTION : 15 POINTS
+
+    -->
+
+
+
+</body>
+</html>

@@ -1,10 +1,19 @@
 body {
     text-align: center;
     font-family: Verdana;
-
 }
 #myButton {
     font-size: 3em;
     border-radius: 5px;
     padding: 5px 25px;
+    border-color: aqua;
+    margin-top: 10px;
+}
+#C1 {
+    color: aqua;
+    background-color: darkblue;
+    margin-left: 420px;
+    margin-right: 420px;
+    border-radius: 10px;
+    border-style: solid;
 }
